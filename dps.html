@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dps.css">
+        <script scr="dps.js"></script>
+    </head>
+
+<body>
+    <div class='expla'>
+        <p>크뎀 1500% 기준 / 균열 15클 기준 / 4달 1균 1눈 기준(태양은 6달) / 올 7성 기준 / 모든 딜주사위 10클 기준 / DPS는 평균 크리 횟수 포함해서 계산[과열은 예외 / 평균 두 번만 터짐]</p>
+        </div>
+        <div class='warn'>
+        <p>랜덤다이스는 말 그대로 '랜덤'다이스 이기 때문에 플레이어의 운에 따라 DPS는 달라질 수 있으며 위의 DPS는 운이 좋지도 나쁘지도 않을 경우의 DPS 입니다.</p>
+        </div>
+    <div class='statin'>
+        <script>
+            var input = prompt('달 클래스 입력(숫자만 / 12달 이상은 전부 12달로 입력 / 7클, 8클은 취급 안함)', '메세지를 입력해주세요');
+            document.write("달주사위 " + input + " 클래스" + "  |  ");
+     </script>
+     <script>
+        var input2 = prompt('선택할 딜주사위의 숫자 입력','충전 = 1 / 태양 = 2 / 수호자 = 3 / 과열 = 4')
+        if (input2 == 1) {
+            document.write("충달균눈")
+            if (input == 9) {
+                document.write("  |  DPS 627,728,640 [350파워업 기준]")
+            } else {
+                if (input == 10) {
+                    document.write("  |  DPS 970,126,080 [350파워업 기준]")
+                } else {
+                    if (input == 11) {
+                        document.write("  |  DPS 1,565,245,440 [350파워업 기준]")
+                    } else {
+                        if (input == 12) {
+                            document.write("  |  DPS 3,798,981,120 [350파워업 기준]")
+                        }
+                    }
+                }
+                
+            }
+        } else {
+            if (input2 == 2) {
+                document.write("태달균눈")
+                if (input == 9) {
+                    document.write("  |  DPS 89,630,640")
+                } else {
+                    if (input == 10) {
+                        document.write("  |  DPS 148,722,640")
+                    } else {
+                        if (input == 11) {
+                            document.write("  |  DPS 581793268")
+                        } else {
+                            if (input == 12) {
+                                document.write("  |  DPS 1,454,483,170")
+                            }
+                        }
+                    }
+                    
+                }
+            } else {
+                if (input2 == 3) {
+                    document.write("수달균눈")
+                    if (input == 9) {
+                        document.write("  | DPS 296,261,207 [풀스택]")
+                    } else {
+                        if (input == 10) {
+                            document.write("  |  DPS 392,999,559 [풀스택]")
+                        } else {
+                            if (input == 11) {
+                                document.write("  |  DPS 652,983,883 [풀스택]")
+                            } else {
+                                if (input == 12) {
+                                    document.write("  |  DPS 1,408,752,267 [풀스택]")
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    if (input2 == 4) {
+                        document.write("과달균눈")
+                        if (input == 9) {
+                            document.write("  |  DPS 20,758,539 + CRIT 101136155 [풀과열]")
+                        } else {
+                            if (input == 10) {
+                                document.write("  |  DPS 25,948,174 + CRIT 101136155 [풀과열]")
+                            } else {
+                                if (input == 11) {
+                                    document.write("  |  DPS 46,706,713 + CRIT 101136155 [풀과열]")
+                                } else {
+                                    if (input == 12) {
+                                        document.write("  | DPS 103792696 + CRIT 101136155 [풀과열]")
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+     </script>
+</div>
+<div class='maker'>
+    <p>제작자: 즐겜러  |  ver.1.0.0</p>
+</div>
+</body>
+
+</html>
